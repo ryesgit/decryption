@@ -7,6 +7,8 @@ The User Interface for The Decryptor
 '''
 
 import PySimpleGUI as sg
+from decrypt import decrypt
+
 
 sg.theme('DarkAmber')
 
@@ -24,5 +26,8 @@ while True:
 
     if (event == sg.WIN_CLOSED or event == 'Quit'):
         break
+
+    decrypted_text = decrypt(values['input'])
+    window['output'].update(decrypted_text)
 
 window.close()

@@ -1,4 +1,4 @@
-### Decryption
+# Decryption
 
 ## What Is This?
 A program that accepts an encrypted string, decrypts it based on a set of rules, and then returns the decrypted message.

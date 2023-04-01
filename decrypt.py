@@ -17,10 +17,10 @@ decrypt_keys = {
 def main():
   running = True
   while running:
-    ask_for_encrypted_input()
+    ask_and_decrypt_input()
 
 # Ask for encrypted input from user
-def ask_for_encrypted_input():
+def ask_and_decrypt_input():
   user_input = input('Please enter encrypted input: ')
   decrypted = decrypt(user_input)
   print(decrypted)

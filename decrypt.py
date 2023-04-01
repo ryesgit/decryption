@@ -14,6 +14,12 @@ decrypt_keys = {
    "!": "u"
 }
 
+# Ask for encrypted input from user
+def ask_for_encrypted_input():
+  user_input = input('Please enter encrypted input: ')
+  decrypted = decrypt(user_input)
+  print(decrypted)
+
 def decrypt(text):
   completed_word = ''
   for letter in text:

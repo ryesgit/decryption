@@ -19,6 +19,27 @@ def main():
   while running:
     ask_and_decrypt_input()
 
+
+    invalid = True
+    
+    while invalid:
+        # Ask user if there are more to decrypt
+        res = input('Continue decrypting? (y/n): ')
+
+        if res[0].lower() == 'y':
+            # If answer is yes, just continue decrypting
+            invalid = False
+
+        elif res[0].lower() == 'n':
+            # If answer is no, terminate program
+            print('Thank you for using Decryptor')
+            invalid = False
+            running = False
+
+        else:
+            print('Invalid input! Try again')
+
+
 # Ask for encrypted input from user
 def ask_and_decrypt_input():
   user_input = input('Please enter encrypted input: ')

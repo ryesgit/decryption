@@ -4,10 +4,6 @@ Filename: decrypt.py
 
 This program decrypts a message so that it is human-readable
 
-Pseudocode:
-
-3. Return decrypted message to user
-
 '''
 # Create dictionary (hashmap) to look up from for better performance
 decrypt_keys = {
@@ -29,4 +25,5 @@ def decrypt(text):
       else:
         completed_word += letter
 
+  # Return decrypted message to user
   return completed_word

@@ -6,13 +6,6 @@ This program decrypts a message so that it is human-readable
 
 Pseudocode:
 
-2. Iterate through every character from the phrase that user entered
-    (a) If the character is '*', convert it to 'a';
-    (b) If the character is '&', convert it to 'e';
-    (c) If the character is '#', convert it to 'i';
-    (d) If the character is '+', convert it to 'o', and;
-    (e) If the character is '!', convert it to 'u'.
-    (f) If the character is not in the dictionary, retain character
 3. Return decrypted message to user
 
 '''
@@ -24,3 +17,16 @@ decrypt_keys = {
    "+": "o",
    "!": "u"
 }
+
+def decrypt(text):
+  completed_word = ''
+  for letter in text:
+      
+      # Iterate through every character from the phrase that user entered, and then manipulate with respect to the set of decryption keys
+      if letter in decrypt_keys:
+        completed_word += decrypt_keys[letter]
+      
+      else:
+        completed_word += letter
+
+  return completed_word

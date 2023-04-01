@@ -59,5 +59,3 @@ def decrypt(text):
 
   # Return decrypted message to user
   return completed_word
-
-main()

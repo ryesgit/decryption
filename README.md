@@ -9,4 +9,4 @@ The decryption follows these rules:
 2. If the character is '&', convert it to 'e';
 3. If the character is '#', convert it to 'i';
 4. If the character is '+', convert it to 'o', and;
-5. If the character is '!', convert it to 'u'. 
+5. If the character is '!', convert it to 'ua'. 

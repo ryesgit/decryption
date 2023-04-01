@@ -14,6 +14,11 @@ decrypt_keys = {
    "!": "u"
 }
 
+def main():
+  running = True
+  while running:
+    ask_for_encrypted_input()
+
 # Ask for encrypted input from user
 def ask_for_encrypted_input():
   user_input = input('Please enter encrypted input: ')
@@ -33,3 +38,5 @@ def decrypt(text):
 
   # Return decrypted message to user
   return completed_word
+
+main()

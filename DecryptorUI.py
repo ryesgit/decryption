@@ -27,6 +27,9 @@ while True:
     if (event == sg.WIN_CLOSED or event == 'Quit'):
         break
     
+    elif (event == 'Decrypt' and values['input'] == ''):
+        sg.popup('Message to decrypt must be filled!')
+
     elif (event == 'Decrypt' or event == '\r'):
         decrypted_text = decrypt(values['input'])
         window['input'].update('')
